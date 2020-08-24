@@ -1,0 +1,104 @@
+/* Your styles should be mobile-first and responsive */
+
+/** 
+  * If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
+  *
+  * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
+  *
+*/
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    margin: 0;
+    background: cover;
+    background-image: url("images/general/wallpaper.jpeg");
+    background-color: #262626;
+  }
+
+/* Center h1 headers and assign color. */
+h1 {
+    letter-spacing: 3px;
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+    color: #F4A460;
+}
+
+h2 {
+    color: #FDE3A7;
+}
+
+legend {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+.start-screen, fieldset {
+    width:80%;
+    padding: 40px;
+    margin: 55px auto 0 auto;
+    background:rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+  }
+
+main {
+      text-align: center;
+}
+
+form {
+      text-align: center;
+      text-shadow: 3px;
+      size: 20px;
+}
+
+img {
+      width: 100%;
+}
+
+.correct-answer {
+    background:rgb(135, 199, 132);
+    padding: 10px 20px;
+    margin: 5px 20px;
+    border:2px solid rgb(12, 155, 4);
+   }
+   
+.incorrect-answer {
+     background:rgb(231, 176, 176);
+     padding: 10px;
+     margin: 5px 20px;
+     border:2px solid #fe0000;
+   }
+
+.answers {
+    text-align: left;
+}
+
+button {
+    margin-top: 10px;
+}
+
+button.hide-button {
+    display: none;
+}
+
+@media all and (min-width: 600px) {
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        size: 76px;
+    }
+
+    .start-screen, fieldset {
+        width: 40%;
+      }
+    
+      .answers {
+          margin-left: 20%;
+          margin-right: 20%;
+      }
+}
