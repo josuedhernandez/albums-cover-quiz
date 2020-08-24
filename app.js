@@ -77,20 +77,20 @@ const albumsquiz = {questions: [
   /********** TEMPLATE GENERATION FUNCTIONS **********/
 
   
-  // These functions return HTML templates
-  function generateAnswersString(options) {
-    // Generate Answers.
-    let answersString = "", i = 0;
-    options.forEach(answer => {
-        answersString += `
-          <div id="option${i + 1}">
-            <input type="radio" name="options" id="option${i + 1}" value="${answer}" tabindex ="${i + 1}" required> 
-            <label for="option${i + 1}">${answer}</label>
-          </div>
-        `;
-        i++;
-      });
-      return answersString;
+// These functions return HTML templates
+function generateAnswersString(options) {
+  // Generate Answers.
+  let answersString = "", i = 0;
+  options.forEach(answer => {
+      answersString += `
+        <div id="option${i + 1}">
+          <input type="radio" name="options" id="option${i + 1}" value="${answer}" tabindex ="${i + 1}" required> 
+          <label for="option${i + 1}">${answer}</label>
+        </div>
+      `;
+      i++;
+    });
+  return answersString;
 }
 
 function generateQuestionstring() {
